@@ -25,7 +25,7 @@ class Person {
     }
 
     print() {
-        console.log('Person, ' + this + '');
+        console.log( this );
     }
 
     toString() {

@@ -14,6 +14,11 @@ class Student extends Person {
     get tutionfee(){
         return this._tutionfee
     }
+
+    print(){
+        super.print()
+        console.log(`Subjects: ${this._subjects} , Tutionfee: ${this._tutionfee}`);
+    }
 }
 
 module.exports = Student;
