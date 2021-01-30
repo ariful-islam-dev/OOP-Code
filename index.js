@@ -14,9 +14,6 @@ class Person {
     changeName(name) {
         this.name = name
     }
-    arrow = (email) => {
-        this.email = email;
-    }
     sendEmail(msg) {
         console.log('To', this.email);
         console.log('Sending Email', msg);
@@ -37,6 +34,3 @@ p1.changeName('M.A.I. Raju')
 
 p1.print()
 p3.print()
-
-p1.arrow('ariful4082@gmail.com')
-p1.print();
