@@ -7,16 +7,23 @@ person.email = 'ariful4082@gmail.com';
 class Person {
 
     constructor(name, email) {
-        this.name = name
-        this.email = email
+        this._name = name
+        this._email = email
     }
 
-    changeName(name) {
-        this.name = name
+    getName() {
+        return this._name
     }
-    sendEmail(msg) {
-        console.log('To', this.email);
-        console.log('Sending Email', msg);
+
+    setName(name){
+        this._name=name
+    }
+
+    getEmail(){
+        return this._email
+    }
+    setEmail(email){
+        this._email=email
     }
 
     print() {
@@ -28,9 +35,7 @@ const p1 = new Person('Ariful Islam', 'arifulislam@gmail.com');
 const p2 = new Person('Aysha Moni', 'ayshamoni@gmail.com');
 const p3 = new Person('Zarif', 'zarif@email.com')
 
-p3.sendEmail('Hello')
+p1.setName('MAI Raju')
+p1.setEmail('ariful4082@gmail.com')
+console.log(p1.getName(), p1.getEmail());
 
-p1.changeName('M.A.I. Raju')
-
-p1.print()
-p3.print()
