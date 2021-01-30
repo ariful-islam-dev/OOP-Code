@@ -22,7 +22,11 @@ class Person {
 
 
     print() {
-        console.log(this);
+        console.log('Person, '+ this + '');
+    }
+
+    toString(){
+        return `Name: ${this._name}, Email: ${this._email}`
     }
 }
 
@@ -33,3 +37,4 @@ const p3 = new Person('Zarif', 'zarif@email.com')
 p1.name = 'Ariful'
 console.log(p1.name);
 p1.print()
+console.log(p1 + '');
