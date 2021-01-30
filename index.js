@@ -26,6 +26,15 @@ class Person {
         this._email=email
     }
 
+    sendMail(msg){
+        console.log('To:',  this._email);
+        console.log('MSG:', this._sanitazeMsg(msg));
+    }
+
+    _sanitazeMsg(msg){
+        return msg.trim().toLowerCase();
+    }
+
     print() {
         console.log(this);
     }
@@ -39,3 +48,4 @@ p1.setName('MAI Raju')
 p1.setEmail('ariful4082@gmail.com')
 console.log(p1.getName(), p1.getEmail());
 
+p1.sendMail('                   WOW! IT IS WORKIng        ');
