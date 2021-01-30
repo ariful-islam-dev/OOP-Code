@@ -35,13 +35,21 @@ class Person {
     static isValid(age) {
         return age >= 18;
     }
+    static equal(p1, p2) {
+        if (p1.name !== p2.name) return false
 
+        if (p1.email !== p2.email) return false
+
+        return true
+    }
     
+
 }
 
 const p1 = new Person('Ariful Islam', 'arifulislam@gmail.com');
 const p2 = new Person('Aysha Moni', 'ayshamoni@gmail.com');
 const p3 = new Person('Zarif', 'zarif@email.com')
+const p6 = new Person('Zarif', 'zarif@email.com')
 
 const p4 = { _name: 'Test', _email: 'test@email.com' };
 
@@ -50,12 +58,13 @@ console.log(Person.PI);
 const testUser = {
     name: 'Test',
     email: 'test@gmail.com',
-    age:15
+    age: 15
 }
 
 let p5 = null
-if(Person.isValid(testUser.age)){
+if (Person.isValid(testUser.age)) {
     p5 = new Person(testUser.name, testUser.age)
 
 }
-console.log(p5);
+console.log(Person.equal(p6, p3))
+console.log(p3 === p6);
