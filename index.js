@@ -9,12 +9,13 @@ class Person {
     constructor(name, email) {
         this.name = name
         this.email = email
-        console.log(this);
     }
 }
 
 const p1 = new Person('Ariful Islam', 'arifulislam@gmail.com');
 const p2 = new Person('Aysha Moni','ayshamoni@gmail.com');
+const p3 = new Person('Zarif', 'zarif@emil.com')
 
-// console.log(p1);
-// console.log(p2);
+console.log(p1);
+console.log(p2);
+console.log(p3);
