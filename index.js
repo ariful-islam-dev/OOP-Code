@@ -1,20 +1,18 @@
 const person = {};
 
 person.name = 'Ariful Islam';
-person.email= 'ariful4082@gmail.com';
+person.email = 'ariful4082@gmail.com';
 console.log(person);
 
 class Person {
-
+    name = 'Person 1';
+    email = 'person@gmail.com';
 }
+
 const p1 = new Person();
-p1.name = 'Person 1';
-p1.email = 'person@gmail.com';
+const p2 = new Person();
+p2.name = 'person 2';
+p2.email = 'person2@email.com'
 
 console.log(p1);
-
-const p2 = new Person();
-p2.name = 'Person 2';
-p2.email = 'person2@gmail.com';
-
 console.log(p2);
