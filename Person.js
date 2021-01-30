@@ -1,35 +1,38 @@
 
+const _name = Symbol('name')
+const _email = Symbol('email')
 
 class Person {
 
+    
 
     constructor(name, email) {
-        this._name = name
-        this._email = email
+        this[_name] = name
+        this[_email] = email
     }
     get name() {
         console.log('This is a function call');
-        return this._name;
+        return this[_name];
     }
 
     set name(value) {
-        this._name = value
+        this[_name] = value
     }
 
     get email() {
-        return this._email
+        return this[_email]
     }
 
     set email(value) {
-        this._email = value
+        this[_email] = value
     }
 
     print() {
-        console.log( this );
+        console.log(this);
     }
 
     toString() {
-        return `Name: ${this._name}, Email: ${this._email}`
+        return `Name: ${this[_name]}, Email: ${this[_email]}`
     }
 
     static isValid(age) {
