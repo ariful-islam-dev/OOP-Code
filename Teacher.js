@@ -1,5 +1,10 @@
-class Student {
-    constructor(subject, salary) {
+const Person = require('./Person');
+
+
+class Teacher extends Person {
+
+    constructor(name, email, subject, salary) {
+        super(name, email);
         this._subject = subject
         this._salary = salary
     }
@@ -12,3 +17,5 @@ class Student {
         return this._salary
     }
 }
+
+module.exports = Teacher;

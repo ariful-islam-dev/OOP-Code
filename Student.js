@@ -12,3 +12,5 @@ class Student {
         return this._tutionfee
     }
 }
+
+module.exports = Student;
