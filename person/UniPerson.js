@@ -28,9 +28,9 @@ class UniPerson extends Person {
 
     toString() {
         return `
-            ${super.toString()}, Department: ${this[_department]}, Account ${this[_account]}
+            ${super.toString()}, Department= ${this[_department]}, Account= ${this[_account]}
         `
     }
 }
 
-export default UniPerson;
+module.exports = UniPerson;

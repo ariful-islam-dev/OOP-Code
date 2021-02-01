@@ -28,10 +28,10 @@ class Guardian extends Person{
 
     toString(){
         return `
-            ${super.toString()}, Profession: ${this[_profession]}, Income: ${this[_income]}
+            ${super.toString()}, Profession= ${this[_profession]}, Income= ${this[_income]}
         `
     }
 
 }
 
-export default Guardian
+module.exports =  Guardian
