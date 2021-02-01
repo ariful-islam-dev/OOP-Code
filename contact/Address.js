@@ -5,7 +5,7 @@ const _country = Symbol('country');
 const _postalCode = Symbol('postalCode')
 
 class Address {
-    constructor(id, roadNo, city, region, country, postalCode) {
+    constructor({ id, roadNo, city, region, country, postalCode }) {
         this[_id] = id
         this[_roadNo] = roadNo || '';
         this[_city] = city || '';
@@ -53,9 +53,9 @@ class Address {
         this[_postalCode] = postalCode
     }
 
-    toString(){
+    toString() {
         return `
-        RodaNo: ${this[_roadNo]}, City: ${this[__city]}, Region: ${this[_region]}, Country : ${this[_country]}, PostalCode: ${this[_postalCode]}
+        RodaNo: ${this[_roadNo]}, City: ${this[_city]}, Region: ${this[_region]}, Country : ${this[_country]}, PostalCode: ${this[_postalCode]}
         `
     }
 }
