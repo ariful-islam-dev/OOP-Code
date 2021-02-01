@@ -3,7 +3,7 @@ const _id = Symbol('id');
 const _name = Symbol('name');
 const _credit = Symbol('credit')
 
-class Subjects {
+class Subject {
     constructorj(id, name, credit) {
         this[_id] = id;
         this[_name] = name;
@@ -36,4 +36,4 @@ class Subjects {
     }
 }
 
-module.exports = Subjects
+module.exports = Subject
