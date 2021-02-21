@@ -3,7 +3,7 @@
 const UniPerson = require('./UniPerson');
 
 const _employeeID = Symbol('student');
-const _salary = SymbolJ('salary')
+const _salary = Symbol('salary')
 
 class Employee extends UniPerson {
     constructor(id, name, employeeID, guardian) {

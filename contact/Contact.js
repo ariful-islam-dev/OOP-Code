@@ -45,7 +45,7 @@ class Contact {
 
     toString() {
         return `
-        Id: ${this_id},
+         Id: ${this[_id]},
          Email: ${this[_email]}, 
          Phone: ${this[_phone]}, 
          AlternativePhone: ${this[_alternativePhone]}, 
