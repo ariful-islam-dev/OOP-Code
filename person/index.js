@@ -4,7 +4,8 @@ const Guardian = require('./Guardian');
 const Student = require('./Student');
 const Employee = require('./Employee');
 const Teacher = require('./Teacher');
-const Stuff = require('./Stuff')
+const Stuff = require('./Stuff');
+const Account = require('./Account')
 
 module.exports = {
     Person,
@@ -13,5 +14,6 @@ module.exports = {
     Student,
     Employee,
     Teacher,
-    Stuff
+    Stuff,
+    Account
 };

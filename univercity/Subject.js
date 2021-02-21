@@ -4,7 +4,7 @@ const _name = Symbol('name');
 const _credit = Symbol('credit')
 
 class Subject {
-    constructorj(id, name, credit) {
+    constructor(id, name, credit) {
         this[_id] = id;
         this[_name] = name;
         this[_credit] = credit || 0;
@@ -29,9 +29,8 @@ class Subject {
     toString() {
         return `
         ID: ${this[_id]},
-        name: ${this[_name]};
+        Name: ${this[_name]},
         Credit: ${this[_credit]}
-         
         `
     }
 }
