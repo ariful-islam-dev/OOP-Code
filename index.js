@@ -96,8 +96,8 @@ teacher1.contact = new Contact({
 
 const teacher2 = new Teacher(3, 'Mrs. Ruma', department.subjects[2], 'EMP1003')
 teacher2.department = department
-teacher2.blood = 'A-'
-teacher2.salary = 420000
+teacher2.blood = 'O+'
+teacher2.salary = 42000
 // teacher2.employeeID ='EMP1003'
 teacher2.contact = new Contact({
     id: 1,
@@ -115,7 +115,23 @@ teacher2.contact = new Contact({
 department.teachers = [teacher1, teacher2]
 department.addTeacher(dean)
 
-console.log(dean.department);
+
 // student.department.teachers.forEach((teacher, index)=>{
 //     console.log(`${index+1}. ${teacher.name} ${teacher.subject.name}`);
 // })
+guardian.addChild(student)
+
+const teachersSalary = guardian.children[0].department.teachers.reduce((acc, cur) => {
+    acc += cur.salary
+    return acc
+}, 0)
+console.log(teachersSalary);
+
+let count = 0;
+if (student.blood === 'O+') count++
+if (student.guardian.blood === 'O+') count++
+student.department.teachers.forEach(teacher => {
+    if (teacher.blood === 'O+') count++
+})
+
+console.log(count);
